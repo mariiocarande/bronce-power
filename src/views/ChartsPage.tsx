@@ -5,6 +5,7 @@ import { Card, CardBody, CardHeader, Button } from 'reactstrap';
 
 import Header from '../components/Header';
 import OrganizationLayout from '../components/OrganizationLayout';
+import VisitChartCard from '../components/VisitChartCard';
 
 interface Props {
   history: any;
@@ -32,6 +33,7 @@ const Homepage: React.FC<Props> = ({ history }) => {
               Estadisticas
             </CustomCardHeader>
             <CustomCardBody>
+              <VisitChartCard />
 
             </CustomCardBody>
           </CustomCard>
@@ -64,7 +66,7 @@ const CustomCard: React.FC = styled(Card)`
 
 const CustomCardBody: React.FC = styled(CardBody)`
   display: flex;
-  align-items: center;
+  justify-content: center;
 `;
 
 const CustomMovePages: React.FC = styled.div`
