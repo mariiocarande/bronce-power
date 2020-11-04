@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
   return (
     <h1>
-      Frontend Lab!
+      Bronce-power
     </h1>
   );
 };

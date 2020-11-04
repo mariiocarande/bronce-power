@@ -1,10 +1,13 @@
 // tslint:disable: no-any
 import React from 'react';
 import styled from 'styled-components';
-import { Card, CardBody, CardHeader, Button } from 'reactstrap';
+import { Card, CardBody, CardHeader, Button, CardSubtitle } from 'reactstrap';
 
 import Header from '../components/Header';
 import OrganizationLayout from '../components/OrganizationLayout';
+import VisitChartCard from '../components/VisitChartCard';
+import DoughnutChart from '../components/DoughnutChart';
+import { doughnutChartData } from '../components/doughnutChart/doughtnutChartData';
 
 interface Props {
   history: any;
@@ -31,9 +34,24 @@ const Homepage: React.FC<Props> = ({ history }) => {
             <CustomCardHeader>
               Estadisticas
             </CustomCardHeader>
-            <CustomCardBody>
+            <CardBody>
+              <VisitChartCard />
+            <CustomCard>
+              <Card className="h-100">
+                <CardBody>
+                  <CardSubtitle
+                    style={{ color: 'black', justifyContent: 'center', display: 'flex' }}
+                    >
+                    Products
+                  </CardSubtitle>
 
-            </CustomCardBody>
+                  <div className="dashboard-donut-chart">
+                    <DoughnutChart data={doughnutChartData} />
+                  </div>
+                </CardBody>
+              </Card>
+            </CustomCard>
+            </CardBody>
           </CustomCard>
           <OrganizationLayout />
         </ContainerCard>
@@ -52,19 +70,15 @@ const CustomCardHeader: React.FC = styled(CardHeader)`
 
 const ContainerCard: React.FC = styled.div`
   display: flex;
-  width: 100%;
+  height: 100%;
   height: -webkit-fill-available;
+  width: 100%;
 `;
 
 const CustomCard: React.FC = styled(Card)`
   width: 100%;
-  background-color: #3C4753;
+  background-color: #e0f0fd;
   color: white;
-`;
-
-const CustomCardBody: React.FC = styled(CardBody)`
-  display: flex;
-  align-items: center;
 `;
 
 const CustomMovePages: React.FC = styled.div`

@@ -6,7 +6,7 @@ import {
   Switch,
  } from 'react-router-dom';
 
-import Charts from './views/Charts';
+import Charts from './views/ChartsPage';
 import Homepage from './views/Homepage';
 
 const Routes: React.FC = () => {

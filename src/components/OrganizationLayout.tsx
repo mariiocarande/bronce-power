@@ -44,4 +44,6 @@ const CustomSocialMedia: React.FC = styled.div`
 const CustomOrganizationContainer: React.FC = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: #e7b943;
+  border-radius: 5px;
 `;
