@@ -1,12 +1,14 @@
 
 // tslint:disable: no-any
+import { chartTooltip } from '../utilsChart/utilsChart';
+
 export const areaChartOptions: any = {
   legend: {
     display: false,
   },
   responsive: true,
   maintainAspectRatio: false,
-  tooltips: 'gray',
+  tooltips: chartTooltip,
   scales: {
     yAxes: [
       {

@@ -1,5 +1,7 @@
 // tslint:disable: no-any
 
+import { chartTooltip } from '../utilsChart/utilsChart';
+
 export const barChartOptions: any = {
   legend: {
     position: 'bottom',
@@ -37,5 +39,5 @@ export const barChartOptions: any = {
       },
     ],
   },
-  tooltips: 'white',
+  tooltips: chartTooltip,
 };

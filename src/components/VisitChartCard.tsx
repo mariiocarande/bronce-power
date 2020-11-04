@@ -14,20 +14,18 @@ import { areaChartData } from './areaChart/chartDataConfig';
 import BarChart from '../components/BarChart';
 import { barChartData } from '../components/barChart/barChartData';
 
-const WebsiteVisitsChartCard: React.FC = () => {
+const VisitsChartCard: React.FC = () => {
   return (
     <Card>
       <CardBody>
-        <div className="float-left float-none-xs">
-          <div className="d-inline-block">
-            <h5 className="d-inline">
+            <CardSubtitle style={{ color: 'black', justifyContent: 'center', display: 'flex' }}>
               Visitantes
-            </h5>
+            </CardSubtitle>
+          <div className="float-left float-none-xs">
             <span className="text-muted text-small d-block">
               Visitantes unicos
             </span>
           </div>
-        </div>
           <div className="btn-group float-right float-none-xs mt-2">
             <UncontrolledDropdown>
               <DropdownToggle caret={true} color="primary" className="btn-xs" outline={true}>
@@ -43,14 +41,13 @@ const WebsiteVisitsChartCard: React.FC = () => {
               </DropdownMenu>
             </UncontrolledDropdown>
         </div>
-
       </CardBody>
 
       <div className="chart card-body pt-0">
         <AreaChart data={areaChartData} />
       </div>
 
-      <CardSubtitle>
+        <CardSubtitle style={{ color: 'black', justifyContent: 'center', display: 'flex' }}>
           Bars
         </CardSubtitle>
         <div className="chart-container">
@@ -60,4 +57,4 @@ const WebsiteVisitsChartCard: React.FC = () => {
   );
 };
 
-export default WebsiteVisitsChartCard;
+export default VisitsChartCard;

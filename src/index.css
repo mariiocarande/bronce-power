@@ -19,7 +19,7 @@ h1 {
   text-shadow: 1px 1px 2px black; 
 }
 .container {
-  background-color: #e7b943;
+  /* background-color: #e7b943; */
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -27,6 +27,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   display: flex;
+  height: 100%;
 }
 
 form, .mensajes {

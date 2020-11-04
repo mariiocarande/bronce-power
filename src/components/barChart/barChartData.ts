@@ -5,14 +5,14 @@ export const barChartData: any = {
   datasets: [
     {
       label: 'Volunteers',
-      borderColor: 'blue',
+      borderColor: '#2C75BB',
       backgroundColor: 'white',
       data: [456, 479, 324, 569, 702, 600],
       borderWidth: 2,
     },
     {
       label: 'Recipients',
-      borderColor: 'pink',
+      borderColor: '#EB148B',
       backgroundColor: 'white',
       data: [364, 504, 605, 400, 345, 320],
       borderWidth: 2,
